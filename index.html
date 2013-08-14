@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+        <base target='_top'>
+        <script>
+
+        var data = {
+          video1: {
+            title: "Unlocking potential in the Niger Delta",
+            company: "Eland Oil & Gas PLC",
+            symbol: "ELA:LSE",
+            image: "video1.png",
+            embed: "<object width='279' height='156'> <param name='movie' value='https://www.ft-live.com/global/swf/jwplayer.swf' /> <param name='wmode' value='transparent' /> <param name='flashvars' value='backcolor=FFFFFF&amp;screencolor=000000&amp;lightcolor=000000&amp;frontcolor=000000&amp;autostart=true&amp;fullscreen=true&amp;image=https://serving.portal.dmflex.com/video/thumbs/pnics_Drilling_for_profit_in_small-cap_resources_220413-1650_George_Maxwellv4_thumb.jpg?width=279&height=156&crop=auto&amp;streamer=rtmpt://mydeo.fcod.llnwd.net/a584/d1/decisive/live-sites/portal/pnics&amp;file=Drilling_for_profit_in_small-cap_resources_220413-1650_George_Maxwellv4.mp4' /> <embed src='https://www.ft-live.com/global/swf/jwplayer.swf' wmode='transparent' width='279' height='156' flashvars='backcolor=FFFFFF&amp;screencolor=000000&amp;lightcolor=000000&amp;frontcolor=000000&amp;autostart=true&amp;fullscreen=true&amp;image=https://serving.portal.dmflex.com/video/thumbs/pnics_Drilling_for_profit_in_small-cap_resources_220413-1650_George_Maxwellv4_thumb.jpg?width=279&height=156&crop=auto&amp;streamer=rtmpt://mydeo.fcod.llnwd.net/a584/d1/decisive/live-sites/portal/pnics&amp;file=Drilling_for_profit_in_small-cap_resources_220413-1650_George_Maxwellv4.mp4' allowfullscreen='true' allowscriptaccess='always'></embed></object>"
+          },
+          video2: {
+            title: "Strategic Minerals: making shipments - making money",
+            company: "Strategic Minerals PLC",
+            symbol: "SML:LSE",
+            image: "video2.png",
+            embed: "<object width='279' height='156'> <param name='movie' value='https://www.ft-live.com/global/swf/jwplayer.swf' /><param name='wmode' value='transparent' /> <param name='flashvars' value='backcolor=FFFFFF&amp;screencolor=000000&amp;lightcolor=000000&amp;frontcolor=000000&amp;autostart=true&amp;fullscreen=true&amp;image=https://serving.portal.dmflex.com/video/thumbs/pnics_Drilling_for_profit_in_small-cap_resources_220413-1710_Paul_Harrison_thumb.jpg?width=279&height=156&crop=auto&amp;streamer=rtmpt://mydeo.fcod.llnwd.net/a584/d1/decisive/live-sites/portal/pnics&amp;file=Drilling_for_profit_in_small-cap_resources_220413-1710_Paul_Harrison.mp4' /> <embed src='https://www.ft-live.com/global/swf/jwplayer.swf' width='279' wmode='transparent' height='156' flashvars='backcolor=FFFFFF&amp;screencolor=000000&amp;lightcolor=000000&amp;frontcolor=000000&amp;autostart=true&amp;fullscreen=true&amp;image=https://serving.portal.dmflex.com/video/thumbs/pnics_Drilling_for_profit_in_small-cap_resources_220413-1710_Paul_Harrison_thumb.jpg?width=279&height=156&crop=auto&amp;streamer=rtmpt://mydeo.fcod.llnwd.net/a584/d1/decisive/live-sites/portal/pnics&amp;file=Drilling_for_profit_in_small-cap_resources_220413-1710_Paul_Harrison.mp4' allowfullscreen='true' allowscriptaccess='always'></embed></object>"
+          },
+          video3: {
+            title: "Exploring for oil offshore Ireland and Morocco",
+            company: "Fastnet Oil & Gas PLC",
+            symbol: "FAST:LSE",
+            image: "video3.png",
+            embed: "<object width='279' height='156'> <param name='movie' value='https://www.ft-live.com/global/swf/jwplayer.swf' /> <param name='wmode' value='transparent' /><param name='flashvars' value='backcolor=FFFFFF&amp;screencolor=000000&amp;lightcolor=000000&amp;frontcolor=000000&amp;autostart=true&amp;fullscreen=true&amp;image=https://serving.portal.dmflex.com/video/thumbs/pnics_Drilling_for_profit_in_small-cap_resources_220413-1750_Cathal_Friel_thumb.jpg?width=279&height=156&crop=auto&amp;streamer=rtmpt://mydeo.fcod.llnwd.net/a584/d1/decisive/live-sites/portal/pnics&amp;file=Drilling_for_profit_in_small-cap_resources_220413-1750_Cathal_Friel.mp4' /> <embed src='https://www.ft-live.com/global/swf/jwplayer.swf' wmode='transparent' width='279' height='156' flashvars='backcolor=FFFFFF&amp;screencolor=000000&amp;lightcolor=000000&amp;frontcolor=000000&amp;autostart=true&amp;fullscreen=true&amp;image=https://serving.portal.dmflex.com/video/thumbs/pnics_Drilling_for_profit_in_small-cap_resources_220413-1750_Cathal_Friel_thumb.jpg?width=279&height=156&crop=auto&amp;streamer=rtmpt://mydeo.fcod.llnwd.net/a584/d1/decisive/live-sites/portal/pnics&amp;file=Drilling_for_profit_in_small-cap_resources_220413-1750_Cathal_Friel.mp4' allowfullscreen='true' allowscriptaccess='always'></embed></object>"
+          }
+        }
+
+        function show(id) {
+          document.getElementById('primary').innerHTML = data[id].embed + "<div id='now-playing'>Now Playing: <a href='http://markets.ft.com/tearsheets/performance.asp?s="+data[id].symb+"'>"+data[id].company+"</a> "+data[id].title + "</div>";
+        }
+        window.onload = function() {
+          var thcont = document.getElementById('thumbs');
+          for (var i in data) {
+            thcont.innerHTML += "<div class='info'><a href='#"+i+"' class='thumbnail'><img src='images/"+data[i].image+"' alt=''></a><div class='text-info'><span class='company'><a href='http://markets.ft.com/tearsheets/performance.asp?s="+data[i].symbol+"'>"+data[i].company+"</a> <span class='ftSymbol'><a href='http://markets.ft.com/tearsheets/performance.asp?s="+data[i].symbol+"'>"+data[i].symbol+"</a></span></span> <span class='title'>"+data[i].title+"</span></div></div>";
+          }
+          thcont.addEventListener('click', function(e) {
+            var el = e.target;
+            while (el.tagName !== 'A') el = el.parentNode;
+            show(el.href.replace(/^.*\#/, ''));
+          });
+          show('video1');
+        }
+        </script>
+        <link rel="stylesheet" type="text/css" media="all" href="http://s1.media.ft.com/m/style/1989839515/bundles/user.css">
+        <style type="text/css">
+            .company, .title { display:block; padding: 0; }
+            .title { font-size: 12px; margin:0; }
+            .ftSymbol { color: #777; font-size: 11px; text-transform: upper; display: block; }
+            #primary { float: left; margin: 0; width:279px; overflow:hidden; }
+            #primary * { float:none; display: inline; }
+            .company a { font-size: 12px; margin-right: 4px; }
+            .thumbnail img { width: 108px; height: 71px; }
+            .thumbnail { float: left; }
+            .text-info {float:right; padding: 0 10px; width: 131px; }
+            #thumbs { float: right; width: 260px; }
+            .info { height: 79px; clear:both; }
+            #now-playing { font-size: 12px;}
+        </style>
+    </head>
+    <body>
+        <div id='primary'></div>
+        <div id='thumbs'></div>
+    </body>
+</html>
