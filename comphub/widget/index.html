@@ -45,8 +45,11 @@
           }
           thcont.addEventListener('click', function(e) {
             var el = e.target;
-            while (el.tagName !== 'A') el = el.parentNode;
-            show(el.href.replace(/^.*\#/, ''));
+            while (el.tagName !== 'A' && el.parentNode) el = el.parentNode;
+            if (el.className == 'thumbnail') {
+                show(el.href.replace(/^.*\#/, ''));
+                e.preventDefault();
+            }
           });
           show('video1');
         }
