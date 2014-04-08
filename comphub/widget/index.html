@@ -41,7 +41,7 @@
         window.onload = function() {
           var thcont = document.getElementById('thumbs');
           for (var i in data) {
-            thcont.innerHTML += "<div class='info'><a href='#"+i+"' class='thumbnail'><img src='images/"+data[i].image+"' alt=''></a><div class='text-info'><span class='company'><a href='http://markets.ft.com/tearsheets/performance.asp?s="+data[i].symbol+"'>"+data[i].company+"</a> <span class='ftSymbol'><a href='http://markets.ft.com/tearsheets/performance.asp?s="+data[i].symbol+"'>"+data[i].symbol+"</a></span></span> <span class='title'>"+data[i].title+"</span></div></div>";
+            thcont.innerHTML += "<div class='info'><a href='#"+i+"' class='thumbnail'><img src='../../images/"+data[i].image+"' alt=''></a><div class='text-info'><span class='company'><a href='http://markets.ft.com/tearsheets/performance.asp?s="+data[i].symbol+"'>"+data[i].company+"</a> <span class='ftSymbol'><a href='http://markets.ft.com/tearsheets/performance.asp?s="+data[i].symbol+"'>"+data[i].symbol+"</a></span></span> <span class='title'>"+data[i].title+"</span></div></div>";
           }
           thcont.addEventListener('click', function(e) {
             var el = e.target;
