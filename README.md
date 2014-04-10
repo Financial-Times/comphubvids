@@ -11,11 +11,11 @@ The live version of the widget is located at http://financial-times.github.io/co
 To edit the videos you need to edit the HTML file in this repository, and upload new images for the video thumbnails.
 
 1. If you don't already have an account on GitHub, get one by filling in the big registration form on the homepage of [GitHub.com](http://github.com).
-2. If you do not already have commit rights on the **comphubvids** module, ask one of the FT's GitHub administrators to give you access.
-3. If you haven't already got the GitHub app installed on your computer, downoad it [for Windows](http://windows.github.com/) or [for Mac OS](http://mac.github.com/).
+2. If you do not already have commit rights on the **comphubvids** module, send an email to one of the FT's GitHub administrators to ask for access.
+3. If you haven't already got the GitHub app installed on your computer, downoad it: [for Windows](http://windows.github.com/) or [for Mac OS](http://mac.github.com/).  Install it like you would any other application.
 4. Run the Github app on your computer and sign in using the GitHub account you created in step 1.
-5. Clone the **comphubvids** project (which you'll find within the **FinancialTimes** account), to your computer.  You can put it anywhere but we suggest `~\sandboxes\comphubvids` (where `~` here means your home directory, which is normally the folder where you put all your stuff)
-6. Open the `index.html` file from the comphub/widget folder (created by Github on your computer where you asked it to) in a text editor such as Notepad (on Windows) or TextEdit (on MacOS).  If you double click the index.html file, it will open in your internet browser, so *don't do that*.  Instead, open Notepad *first*, then choose File > Open to open the index.html file.
+5. Clone the **comphubvids** project (which you'll find within the **FinancialTimes** account), to your computer.  There is a 'Clone to computer' button to do this.  You can put it anywhere but we suggest `~\sandboxes\comphubvids` (where `~` here means your home directory, ie find the folder you put all your stuff in, make a subfolder called sandboxes, and clone into that)
+6. Open the `index.html` file from the comphub/widget folder on your computer (created by Github where you asked it to clone the module) in a text editor such as Notepad (on Windows) or TextEdit (on MacOS).  If you double click the index.html file, it will open in your internet browser, so *don't do that*.  Instead, open Notepad *first*, then choose File > Open to open the index.html file.
 7. Edit the data between the lines `// START EDITING HERE` and `// STOP EDITING HERE` and save when done
 8. Update the images in the *images* folder, using the filenames you set in the data you put into index.html
 9. Double-click the index.html file to preview your changes in your web browser.  Click each video in turn to make sure they load and play correctly.
@@ -23,3 +23,5 @@ To edit the videos you need to edit the HTML file in this repository, and upload
 11. The Github app will show you the files that you changed.
 12. Type a summary of your change and click commit.  If necessary, click 'Sync' to push your changes to the server.
 13. Within a few minutes, the live version of the widget will update to reflect your changes.  To test it, visit http://financial-times.github.io/comphubvids.
+
+If you already have a clone on your computer, skip steps 1-5.  Instead, click the 'Sync branch' button to fetch any changes from the server, and then continue from step 6.
