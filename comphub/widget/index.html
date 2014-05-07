@@ -36,7 +36,7 @@
 
 
         function show(id) {
-          document.getElementById('primary').innerHTML = data[id].embed + "<div id='now-playing'>Now Playing: <a href='http://markets.ft.com/tearsheets/performance.asp?s="+data[id].symb+"'>"+data[id].company+"</a> "+data[id].title + "</div>";
+          document.getElementById('primary').innerHTML = data[id].embed + "<div id='now-playing'>Now Playing: <a href='http://markets.ft.com/tearsheets/performance.asp?s="+data[id].symbol+"'>"+data[id].company+"</a> "+data[id].title + "</div>";
         }
         window.onload = function() {
           var thcont = document.getElementById('thumbs');
